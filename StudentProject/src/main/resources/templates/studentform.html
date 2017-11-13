@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Student Form</title>
+</head>
+<body>
+<form  action="#" th:action="@{/process}" th:object="${student}" method="post">
+<input type="hidden" th:field="*{id}"/>
+
+ <label>FirstName:</label><input type="text"   th:field="*{firstName}"/>
+    <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span><br/>
+
+    <label>LastName:</label><input type="text" th:field="*{lastName}"/>
+    <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span><br/>
+
+    <label>EmailAddress:</label><input type="text" th:field="*{emailAddress}"/>
+    <span th:if="${#fields.hasErrors('emailAddress')}" th:errors="*{emailAddress}"></span><br/>
+
+    <label>ContactNumber:</label><input type="text" th:field="*{contactNumber}"/>
+    <span th:if="${#fields.hasErrors('contactNumber')}" th:errors="*{contactNumber}"></span><br/>
+
+    <label>MailingAddress</label><input type="text" th:field="*{mailingAddress}"/>
+    <span th:if="${#fields.hasErrors('mailingAddress')}" th:errors="*{mailingAddress}"></span><br/>
+
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
