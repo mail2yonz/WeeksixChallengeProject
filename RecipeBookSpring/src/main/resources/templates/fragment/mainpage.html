@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thyemleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+
+<nav th:fragment="navclass" class="navbar navbar-inverse">
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#my-collapsible-navbar" aria-expanded="false">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-envelope"></span>
+
+
+            </button>
+
+            <a class="navbar-brand">Recipe Book</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="my-collapsible-navbar">
+            <ul class="nav navbar-nav">
+                <li> <a  href="../../../../../../MyrecipeBook/src/main/resources/templates/recipebook.html">Home</a></li>
+                <li><a  href="../../../../../../MyrecipeBook/src/main/resources/templates/wingsrecipe.html">Wings</a></li>
+                <li><a   href="../../../../../../MyrecipeBook/src/main/resources/templates/makhroudsrecipe.html">Makhrouds</a></li>
+                <li> <a  href="../../../../../../MyrecipeBook/src/main/resources/templates/eggsaucerecipe.html">EggSauce</a></li>
+                <li><a  href="../../../../../../MyrecipeBook/src/main/resources/templates/injerarecipe.html">Injera</a></li>
+                <li><a  href="../../../../../../MyrecipeBook/src/main/resources/templates/golabjamun.html">GolabJamun</a></li>
+
+
+
+            </ul>
+
+
+        </div>
+
+    </div>
+</nav>
+
+</body>
+</html>

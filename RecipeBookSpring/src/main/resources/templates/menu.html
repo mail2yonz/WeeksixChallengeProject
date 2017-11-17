@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thyemeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Menu for the Recipe Book</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+
+
+
+<div th:replace="fragments/mainpage::navclass"><a class="navbar-brand">Recipe Book</a></div>
+
+
+<div class="container">
+
+    <h1 align="center">Menu</h1><br/>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <p><b>Recipe Image</b></p>
+
+        </div>
+
+        <div class="col-md-4">
+            <p class="paragraphdescription"><b>Description</b></p>
+        </div>
+
+        <div class="col-md-4">
+
+            <p class="paragraphprice"><b>Price</b></p>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <a href="crabbcakerecipe.html"> <img class="imgmenu" src="https://c1.staticflickr.com/5/4016/4456463140_5310b094dc_z.jpg?zz=1" alt="This is Marylands Crabbcake"/></a>
+
+        </div>
+
+        <div class="col-md-4">
+            <a href="crabbcakerecipe.html"><p class="paragraphdescription">Maryland Crab cake</p></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <p class="paragraphprice">$15.00</p>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+          <a href="makhroudsrecipe.html">  <img class="imgmenu" src="http://img.over-blog.com/600x450/4/23/79/70/dessert-val/CIMG4917.JPG" alt="This is Makhrouds "/></a>
+
+        </div>
+
+        <div class="col-md-4">
+            <a href="makhroudsrecipe.html"><p class="paragraphdescription">Makhrouds</p></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <p class="paragraphprice">$15.00</p>
+        </div>
+
+
+
+
+    </div>
+    <div class="row">
+
+        <div class="col-md-4">
+          <a href="injerarecipe.html">  <img class="imgmenu" src="http://spatialdrift.com/wp-content/uploads/2013/04/meskerem-atlanta-ethiopian.jpg" alt="This is Injera "/></a>
+
+        </div>
+
+        <div class="col-md-4">
+            <a href="injerarecipe.html"><p class="paragraphdescription">Injera</p></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <p class="paragraphprice">$15.00</p>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+          <a href="../../../../../RecipeBookSpring/src/main/resources/templates/wingsrecipe.html">  <img class="imgmenu" src="https://i.ytimg.com/vi/-EjB1dQX-Y0/maxresdefault.jpg" alt="This is a wing "/></a>
+
+        </div>
+
+        <div class="col-md-4">
+            <a href="../../../../../RecipeBookSpring/src/main/resources/templates/wingsrecipe.html">  <p class="paragraphdescription">Wing</p></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <p class="paragraphprice">$15.00</p>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+           <a href="golabjamun.html"> <img class="imgmenu" src="http://img.inhouserecipes.com/wp-content/uploads/2013/05/gulab-jamun-recipe.jpg" alt="This is golabjamun "/></a>
+
+        </div>
+
+        <div class="col-md-4">
+            <a href="golabjamun.html"><p class="paragraphdescription">Golabjamun</p></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <p class="paragraphprice">$15.00</p>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <a href="eggsaucerecipe.html" ><img class="imgmenu" src="http://4.bp.blogspot.com/-d2A9IjzNiNM/URRgCVU1fQI/AAAAAAAAECw/QfqUY6KNvQE/s1600/rice+crispies,+yam,+green,+tomatoes,+eggs+017.JPG" alt="Egg sauce"/></a>
+
+        </div>
+
+        <div class="col-md-4">
+            <a href="eggsaucerecipe.html" > <p class="paragraphdescription">Egg Sauce</p></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <p class="paragraphprice">$15.00</p>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div th:replace="fragments/mainpage :: everydiv">
+
+<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
